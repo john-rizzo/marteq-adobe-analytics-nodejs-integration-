@@ -1,5 +1,8 @@
 # Setup steps
 
+### Prerequisites
+
+- NodeJS 13.7.0 or latest
 - Create .env file from .env.sample
 - Run `npm i` to install the required packages
 
