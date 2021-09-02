@@ -25,7 +25,7 @@
 
 ## Step 3: Create report suite
 
-- Go to adobe experience platform and create Analytics report Suit
+- Go to adobe experience cloud and create Analytics report Suit
 - Add its value for `ANALYTICS_REPORT_SUIT_ID` in `.env` file. This will be used when generating csv files as `reportSuitID` is required paremeter when submitting those files
 
 ## Step 4: Requesting data and submit to Analytics
