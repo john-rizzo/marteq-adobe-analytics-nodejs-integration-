@@ -31,6 +31,7 @@
 ## Step 4: Requesting data and submit to Analytics
 
 - `/generate_and_submit_file` this route requests default limited data and submits to adobe analytics
+- Ideally this process should run as a background job using bee-queue or other similar tools so its scalable.
 
 This should generate response like:
 
