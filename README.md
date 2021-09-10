@@ -39,7 +39,8 @@ This should generate response like:
 
 ![Adobe Analytics File Submit Response](https://i.imgur.com/mZcX3bi.png "Adobe Analytics File Submit Response")
 
-## API Limirations and Filters
+## API Limitations and Filters
+
 - Maximum number of records returned is 500.
 - You can modify data using following parameters `page`, `limit`, `from_date` in 'YYYY-MM-DD' format, `to_date`
 
