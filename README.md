@@ -6,7 +6,7 @@
 - Create .env file from .env.sample
 - Run `npm i` to install the required packages
 
-**Note: None adobe users doesn't need to perform Step 2, 3 and 4.**
+**Note: Non-adobe users don't need to perform Step 2, 3 and 4.**
 
 ## Step 1: Acquire MarteQ API Key from Marketer Portal
 
