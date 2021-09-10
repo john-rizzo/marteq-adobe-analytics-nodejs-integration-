@@ -85,4 +85,36 @@ obj.createCSVWithCustomerBrowsingData = () => {
     });
 };
 
+obj.getCustomerBrowsingData = () => {
+    return new Promise((resolve, reject) => {
+        
+        if(!process.env.MARTEQ_API_URL) {
+            console.log('No API keyfound');
+            return reject({error: 'No API keyfound'});
+        }
+
+        console.log('Requesting data from MarteQ...');
+
+        const options = {
+        url: process.env.MARTEQ_API_URL,
+        headers: {
+            'User-agent': 'MarteQ-SDK',
+            'x-auth': process.env.MARTEQ_API_KEY
+        }};
+        
+        function callback(error, response, body) {
+            if (!error && response.statusCode == 200) {
+                const info = JSON.parse(body);
+                // do something with info
+                resolve(info);
+            } else {
+                reject(error);
+            }
+        }
+
+        // send marteq Data API request
+        request(options, callback);
+    });
+};
+
 module.exports = obj;
