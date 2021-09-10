@@ -6,6 +6,8 @@
 - Create .env file from .env.sample
 - Run `npm i` to install the required packages
 
+**Note: None adobe users doesn't need to perform Step 2, 3 and 4.**
+
 ## Step 1: Acquire MarteQ API Key from Marketer Portal
 
 - Login to your marketer account
@@ -37,11 +39,15 @@ This should generate response like:
 
 ![Adobe Analytics File Submit Response](https://i.imgur.com/mZcX3bi.png "Adobe Analytics File Submit Response")
 
-
+## API Limirations and Filters
 - Maximum number of records returned is 500.
 - You can modify data using following parameters `page`, `limit`, `from_date` in 'YYYY-MM-DD' format, `to_date`
 
 ## Customization of code for additional data
 
 - You can modify helper files Marteq.js and AdobeAnalytics.js for additional changes as per your needs
+
+## For Non Adobe Users
+
+- You can view the code under helpers/Marteq.js and find function `getCustomerBrowsingData`. This functions gets the default set of records and returns via Promise. You can use it wheverever and however you want.
 
