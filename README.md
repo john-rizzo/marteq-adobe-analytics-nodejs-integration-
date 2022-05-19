@@ -13,7 +13,7 @@
 - Login to your marketer account
 - In Left Sidebar find API Keys section
 - Create and notdown API Key and add it in .env file for `MARTEQ_API_KEY` variable
-- Add MarteQ API Url as MARTEQ_API_URL, you can get this from support
+- Add Marteq API Url as MARTEQ_API_URL, you can get this from support
 
 ## Step 2: Create project and generate access token
 
