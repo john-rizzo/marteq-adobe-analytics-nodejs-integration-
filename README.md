@@ -8,7 +8,7 @@
 
 **Note: Non-adobe users don't need to perform Step 2, 3 and 4.**
 
-## Step 1: Acquire MarteQ API Key from Marketer Portal
+## Step 1: Acquire Marteq API Key from Marketer Portal
 
 - Login to your marketer account
 - In Left Sidebar find API Keys section
